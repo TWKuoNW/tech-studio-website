@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未來智慧 - 軟體與硬體的完美交集</title>
+    <meta name="description" content="不只是寫程式。我們專注於跨領域的系統整合，為複雜的實體環境打造客製化、高可靠度的自動化解決方案。">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TECH<span>STUDIO</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">首頁</a></li>
+            <li><a href="#portfolio">作品展示</a></li>
+            <li><a href="#services">服務流程</a></li>
+            <li><a href="#about">關於我們</a></li>
+            <li><a href="#contact" class="btn-primary-small">聯絡我們</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h1>定義未來智慧：<br>軟體、IoT、AI 影像辨識的完美交集。</h1>
+            <p class="subtitle">不只是寫程式。我們專注於跨領域的系統整合，從底層感測器、嵌入式系統到高階深度學習模型與後台介面，為複雜的實體環境打造客製化、高可靠度的自動化解決方案。</p>
+            <a href="#portfolio" class="btn-primary">探索我們的專案</a>
+            
+            <div class="trust-bar-container">
+                <div class="trust-bar">
+                    <span>#100% 客製化開發</span>
+                    <span class="separator">/</span>
+                    <span>#學術與產業級整合能力</span>
+                    <span class="separator">/</span>
+                    <span>#邊緣運算與雲端架構</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Portfolio Section -->
+    <section id="portfolio" class="portfolio section-padding">
+        <h2 class="section-title fade-in-up">深入技術骨幹的專案解析</h2>
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="project-card fade-in-up">
+                <div class="project-img-wrapper">
+                    <img src="img/project1.jpg" alt="智慧水產養殖監測系統" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="project-content">
+                    <h3>智慧水產養殖監測系統</h3>
+                    <div class="tags">
+                        <span class="tag">#IoT整合</span>
+                        <span class="tag">#數據視覺化</span>
+                        <span class="tag">#自動化控制</span>
+                    </div>
+                    <p><strong>技術架構：</strong> Python 後端、物聯網感測器節點、資料庫串接</p>
+                    <p><strong>客戶挑戰：</strong> 傳統養殖場缺乏科學化數據，水質突變或設備異常時無法即時反應，且人工巡視成本極高。</p>
+                    <div class="solution">
+                        <h4>我們的解決方案：</h4>
+                        <ul>
+                            <li><strong>硬體端：</strong> 整合高精度多參數水質傳感器（如溶氧、pH、溫度），打造低功耗、抗腐蝕的資料收集節點。</li>
+                            <li><strong>軟體端：</strong> 開發雲端即時監控儀表板。當數據異常時，系統自動透過 LINE/SMS 發送警報，並可遠端連動水車或增氧設備。</li>
+                        </ul>
+                    </div>
+                    <div class="result">
+                        <strong>成效數據：</strong> 實現全天候 24H 零死角監控，異常響應時間縮短至 1 分鐘內。
+                    </div>
+                    <a href="case-aquaculture.html" class="btn-outline mt-2">查看專案背後的故事 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card fade-in-up">
+                <div class="project-img-wrapper">
+                    <img src="img/project2.jpg" alt="摩西分海電子圍籬與潮汐預警系統" onerror="this.src='https://images.unsplash.com/photo-1543854593-ba0901e18cd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="project-content">
+                    <h3>摩西分海電子圍籬與潮汐預警系統</h3>
+                    <div class="tags">
+                        <span class="tag">#深度學習</span>
+                        <span class="tag">#Edge AI</span>
+                        <span class="tag">#影像辨識 (CV)</span>
+                    </div>
+                    <p><strong>技術架構：</strong> 深度學習物件偵測模型、影像串流處理、警報聯動系統</p>
+                    <p><strong>客戶挑戰：</strong> 廣闊海岸線的遊客安全管理困難，傳統紅外線或實體圍籬容易受海象干擾，且無法精準辨識「人」。</p>
+                    <div class="solution">
+                        <h4>我們的解決方案：</h4>
+                        <ul>
+                            <li><strong>AI 辨識：</strong> 針對複雜戶外環境（光線變化、海浪干擾）訓練客製化深度學習模型，精準鎖定人體特徵。</li>
+                            <li><strong>邊緣部署：</strong> 將模型部署於高階邊緣運算裝置，確保在網路不穩定的海岸線也能進行低延遲、高強度的即時運算。</li>
+                            <li><strong>預警聯動：</strong> 結合在地潮汐開放時間，超時或違規闖入即自動觸發廣播與中控室警報。</li>
+                        </ul>
+                    </div>
+                    <div class="result">
+                        <strong>成效數據：</strong> 提升夜間與視線不良時的辨識率，實現 100% 自動化危險區域過濾。
+                    </div>
+                    <a href="case-moses.html" class="btn-outline mt-2">查看專案背後的故事 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card fade-in-up">
+                <div class="project-img-wrapper">
+                    <img src="img/project3.jpg" alt="海岸觀測計與無人船實驗室開發專案" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="project-content">
+                    <h3>海岸觀測計與無人船實驗室開發專案</h3>
+                    <div class="tags">
+                        <span class="tag">#無人載具控制</span>
+                        <span class="tag">#ROS 2 開發</span>
+                        <span class="tag">#感測器融合</span>
+                    </div>
+                    <p><strong>技術架構：</strong> Ubuntu 環境、ROS 2、C++/Python、多音束聲納與慣性導航系統數據解析</p>
+                    <p><strong>客戶挑戰：</strong> 在惡劣海象下進行高解析度的水下測繪與環境採樣，需要極高穩定性的載具控制與龐大的感測器資料同步。</p>
+                    <div class="solution">
+                        <h4>我們的解決方案：</h4>
+                        <ul>
+                            <li><strong>系統建置：</strong> 在 Ubuntu 平台上架構基於 ROS 2 的高可靠度控制系統，負責無人船的底層通訊與任務排程。</li>
+                            <li><strong>感測器整合：</strong> 撰寫與適配複雜硬體的驅動程式，確保大流量觀測數據與 GPS/INS 空間資訊能做到微秒級的時間同步。</li>
+                            <li><strong>自駕演算法：</strong> 導入強化學習與導航演算法，優化載具在複雜水域的避障與路徑規劃能力。</li>
+                        </ul>
+                    </div>
+                    <div class="result">
+                        <strong>成效數據：</strong> 成功建構科研級無人觀測平台，大幅提升水下圖資建置效率與數據可靠度。
+                    </div>
+                    <a href="case-usv.html" class="btn-outline mt-2">查看專案背後的故事 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section id="services" class="services section-padding">
+        <h2 class="section-title fade-in-up">服務內容與流程</h2>
+        <p class="section-subtitle fade-in-up">具備跨領域整合能力，我們用最適合的工具解決最複雜的問題。</p>
+        
+        <div class="service-cards">
+            <div class="service-card glow-blue fade-in-up">
+                <div class="icon">👁️</div>
+                <h3>AI 影像辨識與深度學習</h3>
+                <p><strong>涵蓋範圍：</strong> 瑕疵檢測 (AOI) / 智慧安防監控 / 行為預測分析 / 客製化模型訓練與輕量化</p>
+                <p class="advantage"><strong>優勢：</strong> 不依賴現成套件，針對特殊場景（如低光源、水下）微調模型，並具備邊緣運算部署能力。</p>
+            </div>
+            <div class="service-card glow-green fade-in-up">
+                <div class="icon">⚙️</div>
+                <h3>智慧物聯網與硬體整合</h3>
+                <p><strong>涵蓋範圍：</strong> 傳感器網路建置 / MCU 開發 / DAQ 資料擷取 / 有線與無線通訊模組整合</p>
+                <p class="advantage"><strong>優勢：</strong> 自底向上的開發能力，從單晶片到整機系統測試，確保極端環境的穩定性。</p>
+            </div>
+            <div class="service-card glow-purple fade-in-up">
+                <div class="icon">🖥️</div>
+                <h3>系統整合與軟體開發</h3>
+                <p><strong>涵蓋範圍：</strong> 後台管理系統 / 視覺化儀表板 / ROS 2 機器人作業系統 / 自動化控制腳本</p>
+                <p class="advantage"><strong>優勢：</strong> 處理複雜資料流，將雜亂硬體訊號轉為友善監控介面，提供一站式解決方案。</p>
+            </div>
+        </div>
+
+        <div class="process-timeline mt-5">
+            <h3 class="fade-in-up" style="text-align: center; margin-bottom: 2rem;">專案開發流程與交付物</h3>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h4>1. 需求評估</h4>
+                        <div class="deliverable">📦 產出 &rarr; 專案可行性報告、粗估報價單</div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h4>2. 架構設計</h4>
+                        <div class="deliverable">📦 產出 &rarr; 系統架構圖、軟硬體規格書、API 文件</div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h4>3. 迭代開發</h4>
+                        <div class="deliverable">📦 產出 &rarr; 里程碑展示 (PoC)、測試版系統</div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h4>4. 測試部署</h4>
+                        <div class="deliverable">📦 產出 &rarr; 壓力測試報告、現場安裝調適</div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h4>5. 交付售後</h4>
+                        <div class="deliverable">📦 產出 &rarr; 操作手冊、原始碼轉移、維護合約</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Social Proof Section -->
+    <section id="about" class="about section-padding">
+        <div class="about-content fade-in-up">
+            <h2>關於團隊</h2>
+            <p>「我們是一群具備頂尖學術研究背景與豐富實戰經驗的工程師。從深度學習演算法的研究，到面對真實世界物理限制的硬體整合，我們致力於將前沿技術轉化為穩定運行的商業系統。</p>
+            <p class="highlight-quote">我們不害怕複雜，我們專注於解決問題。」</p>
+        </div>
+
+        <!-- 團隊陣容 -->
+        <div class="team-section section-padding-small">
+            <h2 class="section-title fade-in-up">團隊陣容</h2>
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="member-card fade-in-up">
+                    <div class="member-photo">
+                        <img src="img/2.jpg" alt="郭乃文" onerror="this.src='https://ui-avatars.com/api/?name=Nai+Wen&background=3b82f6&color=fff&size=128'">
+                    </div>
+                    <div class="member-info">
+                        <h3>郭乃文</h3>
+                        <span class="role">首席工程師 (Chief Engineer)</span>
+                        <div class="edu">
+                            <p>國立中興大學 電機系通訊所碩士班</p>
+                            <p>國立澎湖科技大學 電信工程/資工 雙學士</p>
+                        </div>
+                        <div class="exp">
+                            <p><strong>經歷：</strong>澎科大海岸觀測暨無人載具實驗室工程師</p>
+                        </div>
+                        <div class="skills-tags">
+                            <span>網頁後端架構</span>
+                            <span>IoT 系統整合</span>
+                            <span>深度學習</span>
+                            <span>機器學習</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="member-card fade-in-up">
+                    <div class="member-photo">
+                        <img src="img/1.jpg" alt="孫瑋庭" onerror="this.src='https://ui-avatars.com/api/?name=Wei+Ting&background=10b981&color=fff&size=128'">
+                    </div>
+                    <div class="member-info">
+                        <h3>孫瑋庭</h3>
+                        <span class="role">資深工程師 (Engineer)</span>
+                        <div class="edu">
+                            <p>國立交通大學 資訊工程系研究所</p>
+                            <p>國立宜蘭大學 資訊工程系學士</p>
+                        </div>
+                        <div class="skills-tags">
+                            <span>系統架構規劃</span>
+                            <span>影像辨識 (CV)</span>
+                            <span>演算法優化</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="member-card fade-in-up">
+                    <div class="member-photo">
+                        <img src="img/jiasen.jpg" alt="曹嘉森" onerror="this.src='https://ui-avatars.com/api/?name=Jia+Sen&background=8b5cf6&color=fff&size=128'">
+                    </div>
+                    <div class="member-info">
+                        <h3>曹嘉森</h3>
+                        <span class="role">通訊與網絡工程師</span>
+                        <div class="edu">
+                            <p>國立澎湖科技大學 電信工程學士</p>
+                        </div>
+                        <div class="exp">
+                            <p><strong>經歷：</strong>現任中華電信 (CHT) 電信工程師</p>
+                        </div>
+                        <div class="skills-tags">
+                            <span>光纖網路系統</span>
+                            <span>網絡通訊維運</span>
+                            <span>物聯網通訊協定</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="member-card fade-in-up">
+                    <div class="member-photo">
+                        <img src="img/yuyu.jpg" alt="林郁又" onerror="this.src='https://ui-avatars.com/api/?name=Yu+Yu&background=f59e0b&color=fff&size=128'">
+                    </div>
+                    <div class="member-info">
+                        <h3>林郁又</h3>
+                        <span class="role">射頻與無線通訊顧問</span>
+                        <div class="edu">
+                            <p>國立中山大學 電機工程學系學士</p>
+                        </div>
+                        <div class="exp">
+                            <p><strong>經歷：</strong>現任瑞昱半導體 (Realtek) 射頻工程師</p>
+                        </div>
+                        <div class="skills-tags">
+                            <span>無線通訊技術</span>
+                            <span>天線設計評估</span>
+                            <span>RFIC 架構設計</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-stack-logos fade-in-up">
+            <h3>核心技術與合作認證</h3>
+            <div class="logo-grid">
+                <img src="img/logo-npu.png" alt="澎科大" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/182px-Python-logo-notext.svg.png'">
+                <img src="img/logo-ros.png" alt="ROS 2" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ros_logo.svg/200px-Ros_logo.svg.png'">
+                <img src="img/logo-ubuntu.png" alt="Ubuntu" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/200px-UbuntuCoF.svg.png'">
+                <img src="img/logo-pytorch.png" alt="PyTorch" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/200px-PyTorch_logo_icon.svg.png'">
+                <img src="img/logo-arduino.png" alt="Arduino" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/200px-Arduino_Logo.svg.png'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <h2 class="section-title fade-in-up">聯絡我們</h2>
+        <div class="contact-container fade-in-up glass-card">
+            <p class="contact-expectation">
+                <strong>💡 為了提供您最精準的評估</strong><br>
+                請盡可能詳細描述您的使用場景與目前遭遇的技術瓶頸。我們的工程團隊將在 24 小時內與您聯繫，並安排初步技術會議。
+            </p>
+            <!-- 若需串接 Formspree，請註冊後將 ACTION 替換成您的連結 -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">聯絡人 / 單位名稱 *</label>
+                    <input type="text" id="name" name="name" required placeholder="例如：王小明 / 科技股份有限公司">
+                </div>
+                <div class="form-group">
+                    <label for="email">電子郵件 *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">專案需求與技術瓶頸描述 *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="例如：我們希望在養殖場導入水質監控系統..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-100">送出需求評估</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Tech Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
