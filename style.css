@@ -82,9 +82,9 @@ p {
 }
 
 .member-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--accent-blue);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 15px rgba(59, 130, 246, 0.2);
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(59, 130, 246, 0.15);
 }
 
 .member-photo {
@@ -115,8 +115,8 @@ p {
     color: var(--accent-blue);
     font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1.5px;
 }
 
 .member-info .edu {
@@ -213,9 +213,10 @@ p {
 }
 
 .btn-primary:hover, .btn-primary-small:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-    background: linear-gradient(135deg, #60a5fa, var(--accent-blue));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #60a5fa, #1d4ed8);
+    filter: brightness(1.1);
 }
 
 /* Navbar */
@@ -376,9 +377,9 @@ p {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .project-img-wrapper {
@@ -488,7 +489,7 @@ p {
     padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid var(--glass-border);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
 }
@@ -500,15 +501,24 @@ p {
     left: 0;
     width: 100%;
     height: 4px;
+    transition: height 0.4s ease;
 }
 
-.service-card.glow-blue::before { background: var(--accent-blue); }
-.service-card.glow-green::before { background: var(--accent-green); }
-.service-card.glow-purple::before { background: var(--accent-purple); }
+.service-card.glow-blue { border-top-color: var(--accent-blue); }
+.service-card.glow-blue::before { background: var(--accent-blue); box-shadow: 0 0 20px var(--accent-blue); }
+.service-card.glow-green { border-top-color: var(--accent-green); }
+.service-card.glow-green::before { background: var(--accent-green); box-shadow: 0 0 20px var(--accent-green); }
+.service-card.glow-purple { border-top-color: var(--accent-purple); }
+.service-card.glow-purple::before { background: var(--accent-purple); box-shadow: 0 0 20px var(--accent-purple); }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    background: rgba(30, 41, 59, 0.8);
+    transform: translateY(-8px);
+    background: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.service-card:hover::before {
+    height: 6px;
 }
 
 .service-card .icon {
@@ -579,6 +589,19 @@ p {
     border: 1px solid var(--glass-border);
     padding: 1.5rem;
     border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .content {
+    transform: translateX(10px);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:hover .dot {
+    background: var(--accent-blue);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
 }
 
 .timeline-item h4 {
